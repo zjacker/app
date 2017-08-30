@@ -1,0 +1,141 @@
+a {
+  text-decoration: none;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.33333rem 0.4rem;
+  border-bottom: 1px solid #eee;
+}
+
+.bar img {
+  width: 2.74667rem;
+  height: 0.72rem;
+}
+
+.bar .btn {
+  line-height: 0.53333rem;
+  vertical-align: middle;
+}
+
+.bar .btn a {
+  vertical-align: middle;
+  font-size: 0.4rem;
+  color: #ff9d00;
+}
+
+.bar .btn span {
+  display: inline-block;
+  width: 0.01333rem;
+  height: 0.4rem;
+  margin: 0 0.26667rem;
+  vertical-align: middle;
+  background-color: #ddd;
+}
+
+.bar .btn .iconfont {
+  font-size: 0.53333rem;
+}
+
+.search {
+  padding: 0.26667rem 0.4rem;
+  text-align: center;
+}
+
+.search label {
+  display: block;
+  width: 100%;
+  line-height: 0.4rem;
+  padding: 0.13333rem 0;
+  font-size: 0.32rem;
+  color: #696969;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.search label .iconfont {
+  display: inline-block;
+  margin-right: 0.2rem;
+  font-size: 0.4rem;
+}
+
+.focus {
+  position: relative;
+}
+
+.focus img {
+  display: block;
+}
+
+.focus a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.focus a .title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.53333rem 1.2rem 0.53333rem 0.26667rem;
+}
+
+.focus a .title p {
+  font-size: 0.48rem;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.focus a .title p::after {
+  content: '';
+  position: absolute;
+  bottom: 0.48rem;
+  right: 0.4rem;
+  display: block;
+  width: 0.37333rem;
+  height: 0.53333rem;
+  background: url(../images/i_index.png) no-repeat;
+  background-position: 0 0;
+  background-size: 2rem;
+}
+
+.items {
+  margin: 0 0.4rem;
+  text-align: center;
+}
+
+.items a {
+  display: block;
+  padding: 0.66667rem 0 0.53333rem 0;
+  color: #111;
+  border-bottom: 1px dotted #ddd;
+}
+
+.items a h2 {
+  line-height: 0.66667rem;
+  font-size: 0.53333rem;
+}
+
+.items a h2::after {
+  content: '';
+  display: inline-block;
+  width: 0.53333rem;
+  height: 0.53333rem;
+  margin: 0 0 0.21333rem 0.13333rem;
+  vertical-align: middle;
+  background: url(../images/i_index.png) no-repeat;
+  background-position: 0 -0.50667rem;
+  background-size: 2rem;
+}
+
+.items a p {
+  line-height: 0.64rem;
+  font-size: 0.37333rem;
+  color: #999;
+}
