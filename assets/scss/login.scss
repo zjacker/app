@@ -1,0 +1,154 @@
+a {
+    text-decoration: none;
+}
+
+@function rem($px) {
+    @return $px / 75px * 1rem;
+} // logo start
+.logo {
+    a {
+        display: block;
+        width: rem(200px);
+        height: rem(55px);
+        margin: rem(40px) auto;
+        background: url(../images/logo200x54.png) no-repeat;
+        background-size: 100%;
+    }
+} // logo end
+// 正文 start
+.singup {
+    margin: 0 rem(20px);
+    .nav {
+        display: flex;
+        margin-bottom: rem(60px);
+        li {
+            width: 50%;
+            text-align: center;
+            font-size: rem(30px);
+            border-top: rem(4px) solid #dadada;
+            background-color: #fafafa;
+            a {
+                display: block;
+
+                line-height: rem(80px);
+                color: #999;
+            }
+            &.on {
+                border-top: rem(4px) solid #ffba33;
+                background-color: #fff;
+                a {
+
+                    color: #ffba33;
+                }
+            }
+        }
+    }
+    form {
+        width: 100%;
+        margin-bottom: rem(60px);
+        ul {
+
+            border: 1px solid #dadada;
+            border-radius: 5px;
+            li {
+
+                input {
+                    display: block;
+                    width: 100%;
+                    padding: rem(25px) 0;
+                    font-size: rem(30px);
+                    text-indent: 1em;
+                    border: 0;
+                    outline: none;
+                    &.username {
+                        border-bottom: rem(2px) solid #dadada;
+                    }
+                }
+            }
+        }
+        .forget {
+            padding-top: rem(10px);
+            text-align: right;
+            a {
+                font-size: rem(24px);
+                color: #999;
+            }
+        }
+        .btns {
+            margin-top: rem(40px);
+            button {
+                width: 100%;
+                padding: rem(10px) 0;
+                font-size: rem(34px);
+                outline: none;
+                text-align: center;
+                border-radius: 5px;
+            }
+            .login {
+                margin-bottom: rem(20px);
+                color: #fff;
+                background-color: #ffba33;
+                border: rem(1px) solid #d8b165
+            }
+            .reg {
+                padding: 0;
+                background-color: #fff;
+                border: 1px solid #ffba33;
+                a {
+                    display: block;
+                    padding: rem(10px) 0;
+                    color: #ffba33;
+                }
+            }
+        }
+    }
+} // 正文 end
+// 脚部 start
+.footer {
+    padding-bottom: rem(40px);
+    text-align: center;
+    span {
+        display: inline-block;
+        padding: 0 rem(15px);
+        font-size: rem(24px);
+        color: #ccc;
+        background-color: #fff;
+    }
+    .title {
+        height: rem(50px);
+        margin-top: rem(-16px);
+        border-top: 1px solid #d8d8d8;
+    }
+    .dsf {
+        display: flex;
+        justify-content: space-around;
+        li {
+
+            background-color: #f3f3f3;
+            border: 1px solid #e6e5e5;
+            border-radius: rem(10px);
+            a {
+                display: block;
+                padding: rem(25px) rem(100px);
+                font-size: rem(30px);
+                color: #666;
+                i {
+                    display: block;
+                    width: rem(75px);
+                    height: rem(70px);
+                    margin: 0 auto rem(10px);
+                    background: url(../images/connect_ico.png) no-repeat;
+                    background-size: cover;
+                }
+                .wb {
+                    background-position: 0 0;
+                }
+                .qq {
+                    background-position: -55px 0;
+                }
+            }
+        }
+    }
+}
+
+// 脚部 end

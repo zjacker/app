@@ -1,0 +1,164 @@
+a {
+  text-decoration: none;
+}
+
+.logo a {
+  display: block;
+  width: 2.66667rem;
+  height: 0.73333rem;
+  margin: 0.53333rem auto;
+  background: url(../images/logo200x54.png) no-repeat;
+  background-size: 100%;
+}
+
+.singup {
+  margin: 0 0.26667rem;
+}
+
+.singup .nav {
+  display: flex;
+  margin-bottom: 0.8rem;
+}
+
+.singup .nav li {
+  width: 50%;
+  text-align: center;
+  font-size: 0.4rem;
+  border-top: 0.05333rem solid #dadada;
+  background-color: #fafafa;
+}
+
+.singup .nav li a {
+  display: block;
+  line-height: 1.06667rem;
+  color: #999;
+}
+
+.singup .nav li.on {
+  border-top: 0.05333rem solid #ffba33;
+  background-color: #fff;
+}
+
+.singup .nav li.on a {
+  color: #ffba33;
+}
+
+.singup form {
+  width: 100%;
+  margin-bottom: 0.8rem;
+}
+
+.singup form ul {
+  border: 1px solid #dadada;
+  border-radius: 5px;
+}
+
+.singup form ul li input {
+  display: block;
+  width: 100%;
+  padding: 0.33333rem 0;
+  font-size: 0.4rem;
+  text-indent: 1em;
+  border: 0;
+  outline: none;
+}
+
+.singup form ul li input.username {
+  border-bottom: 0.02667rem solid #dadada;
+}
+
+.singup form .forget {
+  padding-top: 0.13333rem;
+  text-align: right;
+}
+
+.singup form .forget a {
+  font-size: 0.32rem;
+  color: #999;
+}
+
+.singup form .btns {
+  margin-top: 0.53333rem;
+}
+
+.singup form .btns button {
+  width: 100%;
+  padding: 0.13333rem 0;
+  font-size: 0.45333rem;
+  outline: none;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.singup form .btns .login {
+  margin-bottom: 0.26667rem;
+  color: #fff;
+  background-color: #ffba33;
+  border: 0.01333rem solid #d8b165;
+}
+
+.singup form .btns .reg {
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #ffba33;
+}
+
+.singup form .btns .reg a {
+  display: block;
+  padding: 0.13333rem 0;
+  color: #ffba33;
+}
+
+.footer {
+  padding-bottom: 0.53333rem;
+  text-align: center;
+}
+
+.footer span {
+  display: inline-block;
+  padding: 0 0.2rem;
+  font-size: 0.32rem;
+  color: #ccc;
+  background-color: #fff;
+}
+
+.footer .title {
+  height: 0.66667rem;
+  margin-top: -0.21333rem;
+  border-top: 1px solid #d8d8d8;
+}
+
+.footer .dsf {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .dsf li {
+  background-color: #f3f3f3;
+  border: 1px solid #e6e5e5;
+  border-radius: 0.13333rem;
+}
+
+.footer .dsf li a {
+  display: block;
+  padding: 0.33333rem 1.33333rem;
+  font-size: 0.4rem;
+  color: #666;
+}
+
+.footer .dsf li a i {
+  display: block;
+  width: 1rem;
+  height: 0.93333rem;
+  margin: 0 auto 0.13333rem;
+  background: url(../images/connect_ico.png) no-repeat;
+  background-size: cover;
+}
+
+.footer .dsf li a .wb {
+  background-position: 0 0;
+}
+
+.footer .dsf li a .qq {
+  background-position: -55px 0;
+}
