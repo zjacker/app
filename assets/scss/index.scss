@@ -50,14 +50,26 @@ a {
     }
     p {
         font-size: rem(30px);
+        a {
+            color: #ffa800;
+        }
     }
 }
 
 // 顶部搜索 end
 // 轮播 start
 .slider {
+    width: 100%;
+    overflow: hidden;
     .slider-img {
+        position: relative;
+        left: 0;
+        top: 0;
+        display: flex;
+        width: 400%;
         li {
+            float: left;
+            width: 100%;
             img {
                 display: block;
                 width: 100%;
@@ -65,7 +77,6 @@ a {
         }
     }
     .header-nav {
-        height: rem(330px);
         ul {
             padding: rem(56px) rem(20px) rem(15px);
             display: flex;
@@ -86,49 +97,49 @@ a {
                     background-size: 5rem;
                 }
                 .i1 {
-                    color: #e0ab4b;
+                    color: #ffa800;
                     i {
                         background-position: 0 0;
                     }
                 }
                 .i2 {
-                    color: #f6eb8c;
+                    color: #feca2b;
                     i {
                         background-position: 0 rem(-93px);
                     }
                 }
                 .i3 {
-                    color: #82c0ae;
+                    color: #42d6ba;
                     i {
                         background-position: rem(-186px) rem(-93px);
                     }
                 }
                 .i4 {
-                    color: #c77694;
+                    color: #f94a87;
                     i {
                         background-position: rem(-93px) rem(-93px);
                     }
                 }
                 .i5 {
-                    color: #40aff9;
+                    color: #32a2f1;
                     i {
                         background-position: rem(-93px) 0;
                     }
                 }
                 .i6 {
-                    color: #af8783;
+                    color: #fd4e4e;
                     i {
                         background-position: rem(-186px) 0;
                     }
                 }
                 .i7 {
-                    color: #aeb974;
+                    color: #acce0e;
                     i {
                         background-position: rem(-279px) 0;
                     }
                 }
                 .i8 {
-                    color: #987696;
+                    color: #b160df;
                     i {
                         background-position: rem(-279px) rem(-93px);
                     }
@@ -139,3 +150,122 @@ a {
 }
 
 // 轮播 end
+// 正文 statr
+.guide {
+    .banner {
+        padding: rem(17px) 0;
+        background-color: #f8f8f8;
+        h3 {
+            font-size: rem(30px);
+            text-align: center;
+            color: #999;
+            &::before {
+                display: inline-block;
+                content: '';
+                width: rem(20px);
+                height: rem(20px);
+                margin-right: rem(35px);
+                background: url(../images/i_guidet.png) no-repeat 0 0;
+                background-size: 100%;
+            }
+            &::after {
+                display: inline-block;
+                content: '';
+                width: rem(20px);
+                height: rem(20px);
+                margin-left: rem(35px);
+                background: url(../images/i_guidet.png) no-repeat 0 rem(-25px);
+                background-size: cover;
+            }
+        }
+    }
+    .item {
+        padding: rem(30px);
+        border-bottom: 1px solid #ddd;
+        .title {
+            line-height: rem(46px);
+            padding-right: rem(120px);
+            font-size: rem(36px);
+        }
+        .content {
+            display: flex;
+            padding: rem(20px) 0;
+            img {
+                display: block;
+                width: rem(260px);
+                height: rem(180px);
+                margin-right: rem(20px);
+            }
+            .des {
+                position: relative;
+                .summary {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    width: rem(390px);
+                    line-height: rem(40px);
+                    font-size: rem(30px);
+                    color: #999;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    word-break: break-all;
+                }
+                .bottom {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    display: flex;
+                    line-height: rem(40px);
+                    justify-content: space-between;
+                    font-size: rem(22px);
+                    color: #999;
+
+                    .user {
+                        img {
+                            float: right;
+                            display: block;
+                            margin: 0 0 0 rem(15px);
+                            width: rem(40px);
+                            height: rem(40px);
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 正文 end
+// footer statr
+footer {
+    background-color: #2a282c;
+    padding: rem(30px) rem(20px);
+    .inner {
+        display: flex;
+        margin-bottom: rem(20px);
+        justify-content: space-around;
+        .item {
+            width: 15%;
+            height: rem(40px);
+            text-align: center;
+            background-color: #403e42;
+            border-radius: rem(5px);
+            a {
+                display: block;
+                line-height: rem(40px);
+                font-size: rem(20px);
+                color: #929193;
+            }
+        }
+    }
+    p {
+        width: 100%;
+        font-size: rem(20px);
+        text-align: center;
+        color: #575658;
+    }
+}
+
+// footer end
