@@ -1,0 +1,141 @@
+a {
+    text-decoration: none;
+}
+
+@function rem($px) {
+    @return $px / 75px * 1rem;
+}
+
+// 顶部搜索 start
+#search {
+    display: flex;
+    height: rem(100px);
+    padding: 0 rem(20px);
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: #e8e3e0;
+    img {
+        width: rem(168px);
+        height: rem(46px);
+    }
+    .inp {
+        position: relative;
+        vertical-align: middle;
+        input {
+            display: block;
+            width: rem(400px);
+            height: rem(26px);
+            padding: rem(16px) rem(25px);
+            line-height: rem(58px);
+            color: #ababab;
+            font-size: rem(26px);
+            outline: none;
+            border-radius: rem(50px);
+            border: none;
+            background-color: #f3f3f3;
+        }
+        a {
+            position: absolute;
+            top: 0;
+            right: rem(16px);
+            line-height: rem(58px);
+            color: #b9b9b9;
+            font-size: rem(40px);
+            background-color: transparent;
+            outline: none;
+            border: 0;
+            vertical-align: middle;
+        }
+    }
+    p {
+        font-size: rem(30px);
+    }
+}
+
+// 顶部搜索 end
+// 轮播 start
+.slider {
+    .slider-img {
+        li {
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+    .header-nav {
+        height: rem(330px);
+        ul {
+            padding: rem(56px) rem(20px) rem(15px);
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                width: 25%;
+                height: rem(150px);
+                margin-bottom: rem(35px);
+                font-size: rem(30px);
+                text-align: center;
+
+                i {
+                    display: inline-block;
+                    width: rem(90px);
+                    height: rem(90px);
+                    margin-bottom: rem(20px);
+                    background: url(../images/i_nav3.png) no-repeat 0 0;
+                    background-size: 5rem;
+                }
+                .i1 {
+                    color: #e0ab4b;
+                    i {
+                        background-position: 0 0;
+                    }
+                }
+                .i2 {
+                    color: #f6eb8c;
+                    i {
+                        background-position: 0 rem(-93px);
+                    }
+                }
+                .i3 {
+                    color: #82c0ae;
+                    i {
+                        background-position: rem(-186px) rem(-93px);
+                    }
+                }
+                .i4 {
+                    color: #c77694;
+                    i {
+                        background-position: rem(-93px) rem(-93px);
+                    }
+                }
+                .i5 {
+                    color: #40aff9;
+                    i {
+                        background-position: rem(-93px) 0;
+                    }
+                }
+                .i6 {
+                    color: #af8783;
+                    i {
+                        background-position: rem(-186px) 0;
+                    }
+                }
+                .i7 {
+                    color: #aeb974;
+                    i {
+                        background-position: rem(-279px) 0;
+                    }
+                }
+                .i8 {
+                    color: #987696;
+                    i {
+                        background-position: rem(-279px) rem(-93px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 轮播 end
