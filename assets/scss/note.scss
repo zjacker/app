@@ -1,0 +1,193 @@
+a {
+    text-decoration: none;
+}
+
+@function rem($px) {
+    @return $px / 75px * 1rem;
+}
+
+// 顶部bar start
+.bar {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(25px) rem(30px);
+    border-bottom: 1px solid #eee;
+    img {
+        width: rem(206px);
+        height: rem(54px);
+    }
+    .btn {
+        line-height: rem(40px);
+        vertical-align: middle;
+        a {
+            vertical-align: middle;
+            font-size: rem(30px);
+            color: #ff9d00;
+        }
+        span {
+            display: inline-block;
+            width: rem(1px);
+            height: rem(30px);
+            margin: 0 rem(20px);
+            vertical-align: middle;
+            background-color: #ddd;
+        }
+        .iconfont {
+            font-size: rem(40px);
+        }
+    }
+} // 顶部bar end
+// 轮播 statr
+.slider-wrap {
+    padding: rem(60px) rem(20px) 0;
+    background: #309296 url(../images/fs-bg.png) no-repeat center top;
+    .topbar {
+        padding-bottom: rem(60px);
+        span {
+            display: inline-block;
+            line-height: rem(50px);
+            padding: 0 rem(10px);
+            font-size: rem(50px);
+            color: #fff;
+            border-right: rem(4px) solid #fff;
+
+            border-left: rem(4px) solid #fff;
+            &.middle {
+                border: 0;
+            }
+            em {
+                display: block;
+                line-height: rem(24px);
+                font-size: rem(24px);
+            }
+        }
+        a {
+            float: right;
+            display: inline-block;
+            padding: rem(10px) rem(15px);
+            color: #fff;
+            font-size: rem(20px);
+            border-radius: rem(70px);
+            background-color: #111;
+            &::after {
+                content: '';
+                height: 0;
+                clear: both;
+            }
+            i {
+                float: right;
+                display: inline-block;
+                width: rem(40px);
+                height: rem(40px);
+                background: url(../images/icon.png) no-repeat 0 0;
+                background-size: rem(100px) rem(100px);
+            }
+            p {
+                display: inline-block;
+            }
+        }
+    }
+    .slider {
+        .group {
+            a {
+                display: block;
+                border-radius: 5px;
+                box-shadow: 0 0 0.2rem 0.04rem rgba(0, 0, 0, 0.2);
+                overflow: hidden;
+                img {
+                    display: block;
+                }
+                .content {
+                    padding: rem(40px) 0;
+                    background-color: #fff;
+                    text-align: center;
+                    h3 {
+                        margin-bottom: rem(20px);
+                        font-size: rem(40px);
+                        color: #111;
+                    }
+                    p {
+                        font-size: rem(30px);
+                        color: #474747;
+                        span {
+                            color: #ff9d00;
+                        }
+                    }
+                }
+            }
+        }
+        .slider-item {
+            padding-top: rem(20px);
+            text-align: center;
+            .items {
+                display: inline-block;
+                margin-right: rem(10px);
+                img {
+                    display: block;
+                    width: rem(100px);
+                    height: rem(100px);
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+// 轮播 end
+// note start
+.note {
+    padding: rem(50px) rem(30px) rem(30px);
+    .note-list {
+        display: flex;
+        justify-content: space-between;
+        padding: rem(20px) 0;
+        .title {
+            width: 50%;
+            padding-bottom: rem(10px);
+            border-bottom: 1px solid #ddd;
+            .hd {
+                height: rem(160px);
+                font-size: rem(34px);
+                font-weight: bold;
+            }
+            .user {
+                font-size: rem(30px);
+                color: #999;
+                img {
+                    width: rem(40px);
+                    height: rem(40px);
+                    border-radius: 50%;
+                }
+                span {
+                    .light {
+                        color: #ff9d00;
+                    }
+                }
+            }
+            .num {
+                margin-top: rem(20px);
+                font-size: rem(24px);
+                i {
+                    display: inline-block;
+                    width: rem(30px);
+                    height: rem(25px);
+                    vertical-align: middle;
+                    background: url(../images/icon.png) no-repeat rem(-50px) 0;
+                    background-size: rem(100px) rem(100px);
+                }
+                .say {
+                    margin-left: rem(10px);
+                    background-position: rem(-50px) rem(-24px);
+                }
+            }
+        }
+        .img {
+            width: 45%;
+            img {
+                display: block;
+            }
+        }
+    }
+}
+
+// note end
