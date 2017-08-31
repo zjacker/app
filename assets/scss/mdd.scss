@@ -106,7 +106,8 @@ a {
 .items {
     margin: 0 rem(30px);
     text-align: center;
-    a {
+    overflow: hidden;
+    >a {
         display: block;
         padding: rem(50px) 0 rem(40px) 0;
         color: #111;
@@ -130,6 +131,96 @@ a {
             line-height: rem(48px);
             font-size: rem(28px);
             color: #999;
+        }
+    }
+
+    .scrollbar {
+        position: relative;
+        width: 999rem;
+        overflow: hidden;
+        .inner {
+            a {
+                float: left;
+                display: block;
+                vertical-align: middle;
+                font-size: rem(30px);
+                color: #696969;
+
+
+                span {
+                    display: block;
+                    margin: rem(36px) rem(40px) 0 0;
+                    padding-bottom: rem(16px);
+                    &.first {
+                        &::before {
+                            width: 0;
+                            height: 0;
+                            margin: 0;
+                        }
+                    }
+                    &.last {
+                        &::after {
+                            width: 0;
+                            height: 0;
+                            margin: 0;
+                        }
+                    }
+                    &::before {
+                        content: '';
+                        display: inline-block;
+                        width: rem(1px);
+                        height: rem(30px);
+                        margin-right: rem(40px);
+                        vertical-align: middle;
+                        background-color: #ddd;
+                    }
+                    &.active {
+                        position: relative;
+
+                        &::after {
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            content: '';
+                            display: block;
+                            width: 100%;
+                            height: 2px;
+                            background-color: #ff9d00;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .tab {
+        .tab-box {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: rem(40px);
+            a {
+                display: block;
+                color: #111;
+                padding-right: rem(20px);
+                img {
+                    width: rem(208px);
+                    height: rem(172px);
+                }
+                p {
+                    padding-top: rem(16px);
+                    padding-bottom: rem(50px);
+                    font-size: rem(30px);
+                }
+            }
+        }
+        .more {
+            a {
+                display: inline-block;
+                padding: rem(30px) rem(100px);
+                font-size: rem(30px);
+                color: #ff9d00;
+                border: 1px solid #ff9d00;
+                border-radius: 5px;
+            }
         }
     }
 }

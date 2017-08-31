@@ -108,21 +108,22 @@ a {
 .items {
   margin: 0 0.4rem;
   text-align: center;
+  overflow: hidden;
 }
 
-.items a {
+.items > a {
   display: block;
   padding: 0.66667rem 0 0.53333rem 0;
   color: #111;
   border-bottom: 1px dotted #ddd;
 }
 
-.items a h2 {
+.items > a h2 {
   line-height: 0.66667rem;
   font-size: 0.53333rem;
 }
 
-.items a h2::after {
+.items > a h2::after {
   content: '';
   display: inline-block;
   width: 0.53333rem;
@@ -134,8 +135,97 @@ a {
   background-size: 2rem;
 }
 
-.items a p {
+.items > a p {
   line-height: 0.64rem;
   font-size: 0.37333rem;
   color: #999;
+}
+
+.items .scrollbar {
+  position: relative;
+  width: 999rem;
+  overflow: hidden;
+}
+
+.items .scrollbar .inner a {
+  float: left;
+  display: block;
+  vertical-align: middle;
+  font-size: 0.4rem;
+  color: #696969;
+}
+
+.items .scrollbar .inner a span {
+  display: block;
+  margin: 0.48rem 0.53333rem 0 0;
+  padding-bottom: 0.21333rem;
+}
+
+.items .scrollbar .inner a span.first::before {
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+
+.items .scrollbar .inner a span.last::after {
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+
+.items .scrollbar .inner a span::before {
+  content: '';
+  display: inline-block;
+  width: 0.01333rem;
+  height: 0.4rem;
+  margin-right: 0.53333rem;
+  vertical-align: middle;
+  background-color: #ddd;
+}
+
+.items .scrollbar .inner a span.active {
+  position: relative;
+}
+
+.items .scrollbar .inner a span.active::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ff9d00;
+}
+
+.items .tab .tab-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0.53333rem;
+}
+
+.items .tab .tab-box a {
+  display: block;
+  color: #111;
+  padding-right: 0.26667rem;
+}
+
+.items .tab .tab-box a img {
+  width: 2.77333rem;
+  height: 2.29333rem;
+}
+
+.items .tab .tab-box a p {
+  padding-top: 0.21333rem;
+  padding-bottom: 0.66667rem;
+  font-size: 0.4rem;
+}
+
+.items .tab .more a {
+  display: inline-block;
+  padding: 0.4rem 1.33333rem;
+  font-size: 0.4rem;
+  color: #ff9d00;
+  border: 1px solid #ff9d00;
+  border-radius: 5px;
 }
