@@ -106,8 +106,9 @@ a {
 }
 
 .items {
-  margin: 0 0.4rem;
+  padding: 0 0.4rem;
   text-align: center;
+  border-bottom: 1px solid #ddd;
   overflow: hidden;
 }
 
@@ -219,6 +220,10 @@ a {
   padding-top: 0.21333rem;
   padding-bottom: 0.66667rem;
   font-size: 0.4rem;
+}
+
+.items .tab .more {
+  padding-bottom: 0.66667rem;
 }
 
 .items .tab .more a {

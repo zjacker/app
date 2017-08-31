@@ -104,8 +104,9 @@ a {
 // focus end
 // items start
 .items {
-    margin: 0 rem(30px);
+    padding: 0 rem(30px);
     text-align: center;
+    border-bottom: 1px solid #ddd;
     overflow: hidden;
     >a {
         display: block;
@@ -213,6 +214,7 @@ a {
             }
         }
         .more {
+            padding-bottom: rem(50px);
             a {
                 display: inline-block;
                 padding: rem(30px) rem(100px);

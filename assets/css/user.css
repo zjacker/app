@@ -1,0 +1,169 @@
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  padding: 0.4rem;
+}
+
+.header span {
+  line-height: 0.66667rem;
+  font-size: 0.4rem;
+}
+
+.header i {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../images/i_head5.png) no-repeat -13px -13px;
+  background-size: 100px 300px;
+}
+
+.header .btn-set {
+  background-position: -63px -63px;
+}
+
+.face {
+  width: 100%;
+  height: 135px;
+  padding-top: 25px;
+  background-image: url(../images/userbg.jpg);
+  background-size: cover;
+}
+
+.face .userinfo .head {
+  width: 1.46667rem;
+  height: 1.46667rem;
+  margin: 0 auto 0.26667rem;
+}
+
+.face .userinfo .head img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.face .userinfo .username {
+  margin-bottom: 0.26667rem;
+  text-align: center;
+  font-size: 0.4rem;
+  color: #fff;
+}
+
+.face .userinfo .username .lv {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  color: #7c9bc0;
+  font-size: 0.24rem;
+  border-radius: 0.2rem;
+  background-color: #d6d6d6;
+}
+
+.face .userinfo .username .sex {
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: url(../images/sprite3.png) no-repeat -0.4rem -9.01333rem;
+  background-size: 0.8rem 14rem;
+}
+
+.face .userinfo .fans {
+  text-align: center;
+  font-size: 0.26667rem;
+  color: #babfc9;
+}
+
+.list .autograph {
+  padding: 0.4rem 0;
+  text-align: center;
+  color: #111;
+  font-size: 0.32rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.list ul li {
+  line-height: 0.64rem;
+  padding: 0.34667rem 0.53333rem;
+  font-size: 0.4rem;
+  color: #666;
+  border-bottom: 1px solid #ddd;
+}
+
+.list ul li.null {
+  padding: 0.13333rem 0;
+  background-color: #f4f4f4;
+  border: 0;
+}
+
+.list ul li i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.list ul li i.qb {
+  background-position: 0 -10.53333rem;
+}
+
+.list ul li i.sc {
+  background-position: 0 -12.45333rem;
+}
+
+.list ul li i.dd {
+  background-position: 0 -11.17333rem;
+}
+
+.list ul li i.yh {
+  background-position: 0 -11.81333rem;
+}
+
+.list ul li i.dp {
+  background-position: 0 -0.64rem;
+}
+
+.list ul li i.yj {
+  background-position: 0 -1.28rem;
+}
+
+.list ul li i.hd {
+  background-position: 0 -1.97333rem;
+}
+
+.list ul li i.ww {
+  background-position: 0 -2.56rem;
+}
+
+.list ul li i.jb {
+  background-position: 0 -3.2rem;
+}
+
+.list ul li i.huod {
+  background-position: 0 -3.84rem;
+}
+
+.list ul li span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.list ul li .icon {
+  width: 0.64rem;
+  height: 0.64rem;
+  border-radius: 50%;
+  background: url(../images/sprite3.png) no-repeat 0 0;
+  background-size: 0.8rem 14rem;
+}
+
+.list ul li .arrow {
+  float: right;
+  margin-top: 0.2rem;
+  width: 0.34667rem;
+  height: 0.34667rem;
+  background: url(../images/sprite3.png) no-repeat;
+  background-position: 0 -9.41333rem;
+  background-size: 0.8rem 14rem;
+}
